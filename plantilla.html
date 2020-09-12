@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Componentes</title>
+</head>
+
+<body style="background-color: rgb(247, 247, 247);">
+    <div class="container py-5">
+        <div class="row justify-content-center text-center">
+            <div class="col">
+                <img src="bootstrap.png" alt="" class="img-fluid" width="60" height="60">
+                <h3 class="pt-3">Formulario de pago</h3>
+                <p>Esto es un ejemplo de formulario de pago</p>
+            </div>
+        </div>
+
+        <div class="row pt-3 pb-5">
+            <div class="col-7">
+                <h4>Dirección de facturación</h4>
+                <div class="row pt-3 pb-4">
+                    <div class="col-6">
+                        <h6 class="pb-2">Nombre</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <h6 class="pb-2">Apellidos</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6 class="pb-2">Usuario</h6>
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6 class="pb-2 d-inline">Email</h6>
+                        <h6 class="pb-2 d-inline">(Optional)</h6>
+                        <input type="text" class="form-control mt-3" placeholder="correo@lasallenoroeste.edu.mx">
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6 class="pb-2">Dirección de envío</h6>
+                        <input type="text" class="form-control" placeholder="Veracruz S/N">
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6 class="pb-2 d-inline">Dirección 2</h6>
+                        <h6 class="pb-2 d-inline">(Opcional)</h6>
+                        <input type="text" class="form-control mt-3" placeholder="Número interior, suite">
+                    </div>
+                    <div class="col-5 pt-3">
+                        <h6 class="pb-2">País</h6>
+                        <select class="custom-select mr-sm-2">
+                            <option selected>Elegir</option>
+                        </select>
+                    </div>
+                    <div class="col-4 pt-3">
+                        <h6 class="pb-2">Estado</h6>
+                        <select class="custom-select mr-sm-2">
+                            <option selected>Elegir</option>
+                        </select>
+                    </div>
+                    <div class="col-3 pt-3">
+                        <h6 class="pb-2">Código postal</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <hr>
+                <input type="checkbox" class="form-check-input">
+                <p>Mi dirección de entrega es la misma que de facturación</p>
+                <input type="checkbox" class="form-check-input">
+                <p>Guardar esta información para la próxima ocasión</p>
+
+                <hr>
+                <h4 class="pb-3">Pago</h4>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="formaPago" value="checkedValue" checked>
+                        Tarjeta de crédito
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="formaPago" value="checkedValue2">
+                        Tarjeta de débito
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="formaPago" value="checkedValue3">
+                        Paypal
+                    </label>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-6">
+                        <h6 class="pb-2">Nombre en la tarjeta</h6>
+                        <input type="text" class="form-control">
+                        <small class="form-text text-muted">Nombre completo como aparece en la tarjeta</small>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="pb-2">Número de tarjeta</h6>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="row pt-4 pb-4">
+                    <div class="col-3">
+                        <h6 class="pb-2">Expiración</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <h6 class="pb-2">CVV</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <hr>
+
+                <button type="button" class="btn btn-primary btn-block btn-lg mt-4">Continuar con el pago</button>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-8">
+                        <h4 class="text-muted">Carrito</h4>
+                    </div>
+                    <div class="col-4 justify-text-end text-right">
+                        <span class="badge badge-pill badge-secondary">3</span>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Mollete</h5>
+                            </div>
+                            <div class="col-4 text-right">
+                                <h5 class="card-title text-muted">$20</h5>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Delicioso pan con frijol cubierto de queso</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Coca de vidrio</h5>
+                            </div>
+                            <div class="col-4 text-right">
+                                <h5 class="card-title text-muted">$15</h5>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Dulce elíxir de los dioses contenido en una botella de cristal para conservar al máximo su sabor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Gansito</h5>
+                            </div>
+                            <div class="col-4 text-right">
+                                <h5 class="card-title text-muted">$15</h5>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Dulce pastelito relleno de fresa y crema cubierta de chocolate. Recuérdame!</p>
+                    </div>
+                </div>
+                <div class="card alert-success">
+                    <div class="card-body">
+                        <div class="row text-success">
+                            <div class="col-8">
+                                <h5 class="card-title">Cupón</h5>
+                            </div>
+                            <div class="col-4 text-right">
+                                <h5 class="card-title">-$5</h5>
+                            </div>
+                        </div>
+                        <p class="card-text text-success">COVID19</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Total (MXN)</h5>
+                            </div>
+                            <div class="col-4 text-right">
+                                <h5 class="card-title font-weight-bold">$45</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-body py-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código de cupón">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">Ingresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5 text-center">
+            <div class="col">
+                <small class="text-muted">&copy; 2020 Universidad La Salle Noroeste</small>
+                <br>
+                <small class="mx-2">
+                    <a href="#">Aviso de privacidad</a>
+                </small>
+                <small class="mx-2">
+                    <a href="#">Términos y condiciones</a>
+                </small>
+                <small class="mx-2">
+                    <a href="#">Contacto</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
